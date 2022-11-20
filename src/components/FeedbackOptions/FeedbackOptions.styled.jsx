@@ -1,16 +1,21 @@
 import styled from 'styled-components';
 
 export const FeedbackOptionBtn = styled.button`
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 4px;
-  font-size: 18px;
-  font-weight: 500;
-  border: #2a2a2a;
-  box-shadow: 1px 1px 25px 1px rgba(0,0,0,0.55);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  font-size: 25px;
 
-  :active {
-    background-color: #2e5ac5;
-    color: white;
+  padding: 15px 30px;
+  background-color: #404040;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #565656;
+    box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
   }
 `;
